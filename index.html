@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>MDE-Web-Service Example</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" title="landscape" href="css/mde.css" media="screen" />
+<link rel="alternate stylesheet" type="text/css" title="portrait" href="css/mde_p.css" media="screen" />
+
+<script type="text/javascript" src="js/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/jquery.printElement.min.js"></script>
+<script type="text/javascript" src="js/demo.js"></script>
+<script type="text/javascript" src="js/orientation.js"></script>
+</head>
+
+<body>
+	<div id="wrap">
+		<h1 tabindex="-1" accesskey="1">Math Description Engine</h1>
+		<div id="mathTraxForm">
+			<form action="" id="equationForm">
+			<fieldset>
+				<legend>Graph By Shape Equation</legend>
+				<label for="equation">Equation Selector:</label> 
+				<select id="equation" name="equation">
+					<option value="">Please Enter an Equation</option>
+				</select>
+				<fieldset id="equationParameters">
+					<legend>Equation Parameters</legend>
+				</fieldset>
+			</fieldset>
+			<br />
+			<fieldset id="graphDescription">
+				<legend>Equation</legend>
+				<p tabindex="-1" id="equationP"><span id="selectedEquation"></span></p>
+				<p>
+					<label for="equationDescription">Description:</label><br />
+					<textarea cols="70" rows="8" id="equationDescription" tabindex="-1"></textarea>
+				</p>
+				<div id="printOptions">
+				<a id="printGraph" href="" class="button">Print Graph</a>
+				<a id="printDescription" href="" class="button">Print Description</a>
+				<a id="saveGraph" href="" class="button">Save Graph</a>
+				</div>
+			</fieldset>
+			</form><br />
+
+			<!--<div id="printOptions">
+				<a id="printGraph" href="" class="button">Print Graph</a>
+				<a id="printDescription" href="" class="button">Print Description</a>
+				<a id="saveGraph" href="" class="button">Save Graph</a>
+			</div> -->
+		</div>
+		<div id="graph">
+			<fieldset>
+				<legend></legend>				
+				<div id='svgGraph'></div>
+			</fieldset>
+		</div>
+	</div>
+</body>
+</html>
